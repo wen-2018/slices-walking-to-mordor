@@ -4,16 +4,16 @@ function App() {
 
   return (
     <>
-      <div className="map-container">
+      <div className="main-container">
         <div className="slice-container">
           <img className="slice" src="slice.svg" alt="" />
         </div>
-          <svg width="2328" height="1859" viewBox="0 0 2328 1859" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M675 569.557C694.07 588.18 722.256 592.836 733.965 592.836L772.857 584.106L797.948 575.377L819.276 555.008L859.422 562.283L894.55 555.008L938.46 562.283L1040.08 523L1107.83 562.283L1099.05 619.024L1075.21 651.032L1040.08 669.946V690.315L1062.66 694.679L1040.08 747.056L1053.88 758.695L1099.05 738.327L1124.14 777.609V797.978L1184.36 815.437L1194.39 848.9L1254.61 880.908L1245.83 912.916L1259.63 931.83L1283.47 918.735L1289.74 936.194L1264.65 955.108V972.567L1289.74 978.387V1007.48L1277.2 1026.4L1289.74 1083.14L1302.29 1107.87L1322.36 1074.41L1441.54 1107.87L1412.69 1145.7L1417.71 1249L1470.4 1234.45V1173.34L1498 1195.17" stroke="#FF0000" stroke-width="4"/>
-          </svg>
+        <div className="image-container">
+          <img src="map-with-path.jpg" alt="" />
+        </div>
       </div>
     </>
-  )
+  );
 }
 
 export default App
