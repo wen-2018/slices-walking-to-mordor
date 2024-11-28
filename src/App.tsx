@@ -64,20 +64,22 @@ function App() {
   }
 
   return (
-    <div>
-      <label htmlFor="distance">Current distance (km):</label>
-      <input
-        type="text"
-        id="name"
-        name="distance"
-        onChange={handleOnDistanceChange}
-      />
-      <button onClick={() => toggleAnimation()}>
-        {showAnimation ? "Hide Animation" : "Show Animation"}
-      </button>
-      <button onClick={() => toggleMapSize()}>
-        {showLargeMap ? "Show Small Map" : "Show Large Map"}
-      </button>
+    <div className="app-container">
+      <div className="control-container">
+        <label htmlFor="distance">Current distance (km):</label>
+        <input
+          type="text"
+          id="name"
+          name="distance"
+          onChange={handleOnDistanceChange}
+        />
+        <button onClick={() => toggleAnimation()}>
+          {showAnimation ? "Hide Animation" : "Show Animation"}
+        </button>
+        <button onClick={() => toggleMapSize()}>
+          {showLargeMap ? "Show Small Map" : "Show Large Map"}
+        </button>
+      </div>
       <div className="main-container">
         <div className="slice-container">
           <img className="slice" src="slice.svg" alt="" />

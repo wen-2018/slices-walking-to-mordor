@@ -5,10 +5,23 @@
     --slice-size: 1.2rem;
       --slice-top: 0;
 }
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.control-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
 .main-container {
   position: relative;
   width: 2328px;
-  max-width: 100%;
 }
 
 .slice-container {
